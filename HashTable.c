@@ -2,12 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+//Esto define una constante llamada "TABLE_SIZE" con un valor de 10.
 #define TABLE_SIZE 10
 
 // Definición de la estructura del nodo de la lista enlazada
 typedef struct Node {
     char key[50];
     int value;
+
+    // declara un puntero llamado next dentro de una estructura Node. Este puntero apunta a otro nodo de la misma estructura, permitiendo enlazar varios nodos en una estructura de datos como una lista.
     struct Node* next;
 } Node;
 
