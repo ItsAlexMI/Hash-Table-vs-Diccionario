@@ -1,25 +1,25 @@
-# Definición de la hash table (diccionario)
+# Definición de diccionario
 diccionario = {}
 
-# Función para imprimir todos los elementos de la hash table
+# Función para imprimir todos los elementos de diccionario
 def printElements():
-    print("Elementos en la Hash Table:")
+    print("Elementos en diccionario:")
     for key, value in diccionario.items():
         print(f"Clave: {key}, Valor: {value}")
 
-# Función para insertar un elemento en la hash table
+# Función para insertar un elemento en diccionario
 def insert(key, value):
     diccionario[key] = value
     print("Elemento insertado")
 
-# Función para buscar un elemento en la hash table
+# Función para buscar un elemento en diccionario
 def search(key):
     if key in diccionario:
         return diccionario[key]
     else:
         return None
 
-# Función para actualizar el valor de un elemento en la hash table
+# Función para actualizar el valor de un elemento en diccionario
 def update(key, newValue):
     if key in diccionario:
         diccionario[key] = newValue
@@ -27,7 +27,7 @@ def update(key, newValue):
     else:
         print("Elemento no encontrado")
 
-# Función para eliminar un elemento de la hash table
+# Función para eliminar un elemento de diccionario
 def removeElement(key):
     if key in diccionario:
         del diccionario[key]
